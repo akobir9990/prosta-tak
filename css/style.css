@@ -1,0 +1,669 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.header__body {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+}
+.nav__hide {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  border-radius: 10px;
+  background: linear-gradient(150deg, rgb(255, 0, 0), yellow, pink, green);
+  font-size: 10px;
+}
+.nav__show {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  border-radius: 10px;
+  background: linear-gradient(150deg, red, yellow, pink, green);
+  font-size: 10px;
+}
+.header__box {
+  background: #3e3e3e;
+  border: 1px solid rgb(27, 255, 15);
+}
+.left {
+  position: relative;
+  flex: 1;
+  height: 100%;
+}
+.center {
+  flex: 2;
+  height: 100%;
+}
+.center h1 {
+  color: cyan;
+  font-size: 35px;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .center h1 {
+    font-size: 20px;
+  }
+  .center__bottom h2 {
+    font-size: 8px;
+  }
+}
+.center__top,
+.center__bottom {
+  width: 100%;
+  display: block;
+  height: 50%;
+  border: 1px solid red;
+}
+.center__bottom h2 {
+  color: cyan;
+  font-size: 25px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .power-point {
+    transform: scale(0.5);
+  }
+}
+.right {
+  flex: 1;
+  height: 100%;
+}
+
+.content__nav {
+  flex: 1;
+  width: 100%;
+  height: 600px;
+  /* border: 1px solid green; */
+  background: #3e3e3e;
+  overflow: auto;
+  transition: all linear 0.2s;
+}
+@media (max-width: 950px) {
+  /* .content .container {
+    position: relative;
+    display: block;
+  } */
+  .content__nav {
+    position: absolute;
+    width: 250px;
+    z-index: 20;
+  }
+  .all__content {
+    position: relative;
+    width: 100%;
+  }
+  .center__bottom h2 {
+    font-size: 20px;
+  }
+  .center h1 {
+    font-size: 25px;
+  }
+  .center__bottom h2 {
+    font-size: 15px;
+  }
+  .header__body {
+    height: 80px;
+  }
+  /* .content__nav {
+    position: absolute;
+    transform: translateX(-100%);
+  } */
+  .content__nav ul li a {
+    font-size: 10px;
+  }
+  .content__nav ul li {
+    padding-left: 5px;
+  }
+}
+.amaliy__hide label,
+.laboratoriya__hide label,
+.maruza__hide label {
+  color: cyan;
+}
+.all__content {
+  position: relative;
+  /* display: none; */
+  flex: 3;
+  /* border: 1px solid greenyellow; */
+}
+.content__nav ul {
+  position: relative;
+  border-bottom: 2px solid #d8d8d8;
+  /* box-shadow: red 1px 1px 40px ; */
+  width: 100%;
+}
+.content__nav ul li {
+  /*   */
+  top: 20px;
+  padding-left: 30px;
+  line-height: 30px;
+}
+
+.content__nav ul ul {
+  display: none;
+}
+.content .container {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+li {
+  list-style: none;
+}
+.content__nav ul ul li {
+  transition: 0.5;
+}
+.content__nav ul ul li:hover {
+  border-left: 3px solid cyan;
+}
+.content__nav ul li a {
+  font-size: 20px;
+  font-weight: 900;
+}
+.content__nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+.content__nav ul li a:hover {
+  color: cyan;
+}
+.content__nav span:hover {
+  color: cyan;
+}
+.content__nav ul li a span {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate();
+}
+
+.power-point {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.klaster {
+  position: relative;
+  top: 0;
+  left: 10%;
+  width: 700px;
+  height: auto;
+}
+.power-point {
+  position: relative;
+  top: 0;
+  left: 10%;
+  width: 700px;
+  height: auto;
+}
+
+.svg__box svg path {
+  position: relative;
+  fill: none;
+  stroke: black;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0px 0px 5px grey;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(67, 67, 67);
+}
+p,
+h1,
+h2 {
+  padding: 10px;
+}
+
+.nazorat ol li {
+  position: relative;
+  padding-left: 10px;
+}
+
+.test__1 h3 {
+  text-align: center;
+}
+
+.test__1 ul li {
+  position: relative;
+  top: 0;
+  left: 10px;
+}
+.test__1 ul ul li {
+  position: relative;
+  top: 0;
+  left: 20px;
+}
+
+.klaster {
+  position: relative;
+  top: 0;
+  left: 10%;
+  width: 400px;
+  height: auto;
+}
+.power-point {
+  position: relative;
+  top: 0;
+  left: 10%;
+  width: 400px;
+  height: auto;
+}
+
+.block__left {
+  position: relative;
+  padding: 10px;
+  width: 120px;
+
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.block__right {
+  padding: 10px;
+  position: relative;
+  width: 120px;
+}
+.two__boxes {
+  position: relative;
+  display: flex;
+  top: 0;
+}
+.box__right {
+  position: relative;
+  top: 10px;
+  height: 40px;
+  border-left: 1px solid #000;
+}
+.right__top {
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.box__left-2 {
+  position: relative;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 5px;
+}
+.box__right-2 {
+  position: relative;
+  padding: 5px;
+}
+.free__table tr,
+.free__table td {
+  position: relative;
+  width: 100px;
+  height: 20px;
+}
+.two__boxes__left {
+  position: relative;
+  margin-right: 20px;
+}
+.two__box__left {
+  position: relative;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  padding: 5px;
+}
+.numbers_box__left {
+  position: relative;
+  width: 70px;
+}
+
+.numbers_box {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.two__boxes p {
+  position: relative;
+  top: 0;
+  left: 20px;
+}
+.two__box__right__bottom {
+  position: relative;
+  border-top: 1px solid #000;
+  padding: 5px;
+}
+.two__box__right__top {
+  position: relative;
+  padding: 5px;
+}
+.two__boxes__left-1,
+.two__boxes__left-2,
+.two__boxes__left-3,
+.two__boxes__left-4,
+.two__boxes__right-1,
+.two__boxes__right-2 {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+.two__boxes__left-1-left,
+.two__boxes__left-2-left,
+.two__boxes__left-3-left,
+.two__boxes__left-4-left,
+.two__boxes__right-1-left,
+.two__boxes__right-2-left {
+  border-right: 1px solid #000;
+}
+
+.small__box-left {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.small__box-left-1 {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 5px;
+}
+.small__box-left-2-top {
+  border-bottom: 1px solid #000;
+  padding: 5px;
+}
+
+.small__table {
+  position: relative;
+  width: 500px;
+}
+.small__table img {
+  position: relative;
+  transform: scale(0.5);
+}
+.small__table tr,
+.small__table td {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 500px;
+}
+.text__center {
+  text-align: center;
+}
+.indent {
+  text-indent: 25px;
+}
+.am__table {
+  position: relative;
+  width: 90%;
+  margin: 0 5%;
+}
+.am__table tr,
+.am__table td {
+  border: 1px solid #000;
+  padding: 5px 10px;
+  /* text-align: center; */
+}
+.two__table {
+  position: relative;
+  width: 45%;
+  margin: 10px;
+}
+.two__table tr,
+.two__table td {
+  border: 1px solid #000;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.two__table__box {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 700px) {
+  .two__table__box {
+    display: block;
+  }
+}
+.images {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  margin: 0px 5%;
+}
+.am__1,
+.am__2,
+.am__3,
+.am__4 {
+  display: none;
+}
+.lm__1,
+.lm__2,
+.lm__3,
+.lm__4,
+.lm__5,
+.lm__6,
+.lm__7,
+.lm__8,
+.lm__9-10,
+.lm__11-12,
+.lm__13-14,
+.lm__15-16 {
+  display: none;
+}
+.mm__1,
+.mm__2,
+.mm__3,
+.mm__4,
+.mm__5,
+.mm__6,
+.mm__7,
+.mm__8,
+.mm__9,
+.mm__10 {
+  display: none;
+}
+.mt__1,
+.mt__2,
+.mt__3,
+.mt__4,
+.mt__5,
+.mt__6,
+.mt__7,
+.mt__8,
+.mt__9,
+.mt__10 {
+  display: none;
+}
+.test__1,
+.test__2,
+.test__3,
+.test__4,
+.test__5,
+.test__6,
+.test__7,
+.test__8,
+.test__9,
+.test__10{
+  display: none;
+}
+
+
+.slayd,
+.prezentatsiya {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 10px;
+}
+.small__button {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: auto;
+}
+.big__button {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: auto;
+}
+.questions1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 7px;
+  height: auto;
+}
+.questions2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: auto;
+}
+.lm__1__column-1 {
+  position: relative;
+  top: 0;
+  left: 20px;
+  display: flex;
+  padding: 10px;
+}
+.lm__column-2 {
+  position: relative;
+  top: 0;
+  left: 20px;
+  display: flex;
+  text-align: center;
+}
+.lm__column-2 .column-2__box-l .box-l-top {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.lm__column-3 {
+  position: relative;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 20px;
+}
+
+.box-l-1,
+.box-l-2,
+.box-l-3,
+.box-l-4,
+.box-r-1,
+.box-r-2 {
+  position: relative;
+  display: flex;
+}
+.column-3__box-r {
+  position: relative;
+  top: 0;
+  left: 20px;
+}
+.box-l-1-left {
+  position: relative;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.box-l-1-right {
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.box-r-1-left {
+  position: relative;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.box-r-1-right {
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.last {
+  position: relative;
+  border-bottom: none;
+}
+
+.column-4 {
+  position: relative;
+  display: flex;
+  top: 0;
+  left: 20px;
+}
+
+.column-4__box-l-top {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 50px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.column-4__box-3 {
+  position: relative;
+  top: 0;
+  left: 30px;
+}
+.column-4__box-r-top {
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+.column-5 {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
+.column-5__box-r {
+  position: relative;
+  margin-left: 40px;
+}
+.lm-15-x {
+  position: relative;
+  top: 5px;
+  left: 0;
+  width: 70px;
+}
+.lm__15-formula {
+  position: relative;
+  top: 10px;
+  left: 0;
+  height: 35px;
+}
